@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <title>Atom's Project - Little Copter</title>
+    
+        <link href="../CSS/bootstrap.css" rel="stylesheet">
+        <link href="../CSS/main.css" rel="stylesheet">
+    
+        <script src="../Scripts/jquery-1.10.2.min.js"></script>
+        <script src="../Scripts/hover.zoom.js"></script>
+        <script src="../Scripts/hover.zoom.conf.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <div id="header"></div>
+
+	<!-- Projects Section -->	
+	<div class="container pt">
+		<div class="row mt">
+			<div class="col-sm-6 col-sm-offset-3 centered">
+				<h3>Little Copter</h3>
+				<hr>
+				<p>A cute 2D platform game about the evolution of aviation technology.</p>
+			</div>
+		</div>
+		<div class="row mt centered">	
+			<div class="col-sm-4 col-sm-offset-2 centered">
+				<p><img class="img-responsive" src="../Images/Projects/Screenshots/LittleCopter/littlecopter_screenshot_1.png" alt=""></p>    
+			</div>
+            <div class="col-sm-4">
+                <p><img class="img-responsive" src="../Images/Projects/Screenshots/LittleCopter/littlecopter_screenshot_2.png" alt=""></p>
+            </div>
+		</div>
+        <div class="row mt centered">
+            <div class="col-sm-4 col-sm-offset-2 centered">
+                <p><img class="img-responsive" src="../Images/Projects/Screenshots/LittleCopter/littlecopter_screenshot_3.png" alt=""></p> 
+            </div>
+            <div class="col-sm-4">          
+                <p><img class="img-responsive" src="../Images/Projects/Screenshots/LittleCopter/littlecopter_screenshot_4.png" alt=""></p>
+            </div>
+        </div>
+        <div class="row mt">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h4>Game download link</h4>
+                <a href="https://www.dropbox.com/s/19k3i1jk0k4r85a/LittleCopter_win_ver3.zip?dl=1">
+                    Windows
+                </a>
+                <br>
+                <a href="https://www.dropbox.com/s/4rjuuk609bykeh2/LittleCopter_mac_ver3.zip?dl=1">
+                    Mac
+                </a>
+                <br>
+                <br>
+                <h4>Project GitHub URL</h4>
+                <a href="https://github.com/atom0520/LittleCopter" target="_blank">
+                    https://github.com/atom0520/LittleCopter </a>
+            </div>
+        </div>
+	</div>	
+	
+	<!-- Footer Section -->	
+	<div id="footer"></div>	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+  </body>
+  <script>
+        $("#header").load("../Includes/header.html", function(){
+
+          var navItemHome = document.getElementById("nav-item-home").getElementsByTagName("a")[0];
+          navItemHome.setAttribute("href","../"+navItemHome.getAttribute("href"));
+
+          var navItemProjects = document.getElementById("nav-item-projects").getElementsByTagName("a")[0];
+          navItemProjects.setAttribute("href","../"+navItemProjects.getAttribute("href"));
+
+          var navItemCV = document.getElementById("nav-item-cv").getElementsByTagName("a")[0];
+          navItemCV.setAttribute("href","../"+navItemCV.getAttribute("href"));
+
+          var logoImg = document.getElementsByClassName("navbar-logo")[0].getElementsByTagName("img")[0];
+          logoImg.setAttribute("src","../"+logoImg.getAttribute("src"));
+        });
+        
+        $("#footer").load("../Includes/footer.html");
+    </script>
+</html>
