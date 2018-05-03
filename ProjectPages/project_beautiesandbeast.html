@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Atom's Project - Beauties and Beast</title>
+
+    <link href="../CSS/bootstrap.css" rel="stylesheet">
+    <link href="../CSS/main.css" rel="stylesheet">
+
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/hover.zoom.js"></script>
+    <script src="../Scripts/hover.zoom.conf.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar Sectio -->
+    <div id="header"></div>
+
+	<!-- Projects Section -->	
+	<div class="container pt">
+		<div class="row mt">
+			<div class="col-sm-8 col-sm-offset-2 centered">
+				<h3>Beauties and Beast</h3>
+                <hr>
+				<p>Beauties and Beast is a virtual reality (VR) first person shooting (FPS) game.<br> 
+                    In this game, player can use different weapons and strategies, 
+                    and work closely with his three beautiful allies - a gunner, a rancher, and a mage to fight against an evil and powerful dragon. 
+                </p>
+            </div>
+		</div>
+		<div class="row mt">	
+            <div class="col-sm-6 col-sm-offset-3 centered">
+                    <p><img class="img-responsive" src="../Images/Projects/BeautiesAndBeast/beautiesandbeast_screenshot_1.png" alt=""></p>                
+            </div>
+        </div>
+        <div class="row mt centered">
+            <h5>Three Beauties</h5>	
+            <div class="col-sm-6 col-sm-offset-3">
+                    <p><img class="img-responsive" src="../Images/Projects/BeautiesAndBeast/beautiful_allies.png" alt=""></p>                
+            </div>
+        </div>
+
+        <br>
+        <div class="row mt">
+            <div class="col-sm-8 col-sm-offset-2 centered">
+                <p>The dragon is designed to have two attack modes - biting and casting fireball.<br> 
+                    The former is a more powerful melee attack while the latter is a ranged attack.
+                </p>
+            </div>
+            <div style="margin-top:8px" class="col-sm-4 col-sm-offset-2 centered">
+                    <h5>Dragon’s Melee Attack – Biting</h5>	
+                    <p><img class="img-responsive" src="../Images/Projects/BeautiesAndBeast/dragon_melee_attack.png" alt=""></p>                
+            </div>
+            <div style="margin-top:8px" class="col-sm-4 centered">
+                <h5>Dragon’s Ranged Attack – Casting Fireball</h5>	
+                <p><img class="img-responsive" src="../Images/Projects/BeautiesAndBeast/dragon_ranged_attack.png" alt=""></p>                
+            </div>
+        </div>
+
+        <br>
+        <div class="row mt">
+            <div class="col-sm-8 col-sm-offset-2 centered">
+                <p>Player can change weapon via the in-game menu, which takes the anime <i>Sword Art Online</i> as the reference and is of a tree structure rendered on top of other game objects.
+                </p>
+            </div>
+            <div style="margin-top:8px" class="col-sm-6 col-sm-offset-3 centered">
+                    <h5>In-Game Menu</h5>	
+                    <p><img class="img-responsive" src="../Images/Projects/BeautiesAndBeast/ingame_menu.png" alt=""></p>                
+            </div>
+        </div>
+
+        <div class="row mt">
+            <div class="col-sm-8 col-sm-offset-2">
+                <p>The game was developed with Unity and Oculus Rift.</p>
+            </div>
+        </div>
+
+        <div class="row mt centered">
+            <h4>Demo Video</h4>
+
+            <div class="video-container">
+                <iframe allowFullScreen='allowFullScreen' 
+                    src="http://youtube.com/embed/8GjET7Z4qqI?autoplay=0"
+                    frameborder="0">
+                </iframe>
+            </div>
+        </div>
+        <br>
+        <div class="row mt">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h4>Game download link</h4>
+                <a href="https://drive.google.com/uc?export=download&id=1yeU0YxoQT5u6e2O1m0G_oX82J0tgpZah">
+                    Windows </a>
+                <br>
+                <br>
+                <h4>Project GitHub URL</h4>
+                <a href="https://github.com/atom0520/Beauties-and-Beast" target="_blank">
+                    https://github.com/atom0520/Beauties-and-Beast </a>                
+            </div>
+        </div>
+	</div>	
+	
+	<!-- Footer Section -->	
+	<div id="footer"></div>	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+  </body>
+
+  <script>
+        $("#header").load("../Includes/header.html", function(){
+
+          var navItemHome = document.getElementById("nav-item-home").getElementsByTagName("a")[0];
+          navItemHome.setAttribute("href","../"+navItemHome.getAttribute("href"));
+
+          var navItemProjects = document.getElementById("nav-item-projects").getElementsByTagName("a")[0];
+          navItemProjects.setAttribute("href","../"+navItemProjects.getAttribute("href"));
+
+          var navItemCV = document.getElementById("nav-item-cv").getElementsByTagName("a")[0];
+          navItemCV.setAttribute("href","../"+navItemCV.getAttribute("href"));
+
+          var logoImg = document.getElementsByClassName("navbar-logo")[0].getElementsByTagName("img")[0];
+          logoImg.setAttribute("src","../"+logoImg.getAttribute("src"));
+        });
+        
+        $("#footer").load("../Includes/footer.html");
+    </script>
+</html>

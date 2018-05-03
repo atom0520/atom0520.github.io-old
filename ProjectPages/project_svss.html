@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Atom's Project - Smart Video Surveillance System</title>
+
+    <link href="../CSS/bootstrap.css" rel="stylesheet">
+    <link href="../CSS/main.css" rel="stylesheet">
+
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/hover.zoom.js"></script>
+    <script src="../Scripts/hover.zoom.conf.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar Sectio -->
+    <div id="header"></div>
+
+	<!-- Projects Section -->	
+	<div class="container pt">
+		<div class="row mt">
+			<div class="col-sm-8 col-sm-offset-2 centered">
+				<h3>Smart Video Surveillance System</h3>
+                <hr>
+				<p>A Smart Video Surveillance System that can analyze the videos from stored files or live cameras, 
+                    detect human fall events within the videos, 
+                    and send alert notifications via a mobile application to the people concerned when a fall event is detected.
+                </p>
+            </div>
+		</div>
+		
+        <div class="row mt centered">
+            <h5>System Structure</h5>	
+            <div class="col-sm-6 col-sm-offset-3">
+               <img class="img-responsive" src="../Images/Projects/SmartVideoSurveillanceSystem/system_structure.png" alt="">               
+            </div>
+        </div>
+
+        <br>
+        <div class="row mt">
+            <div class="col-sm-8 col-sm-offset-2">
+                <p><b>How does the system work?</b><br>
+                    First, live camera videos or pre-stored videos are fed into the Video Detector 
+                    and the Video Detector would detect the human fall events within the input videos. 
+                    Once a fall event is detected, the Video Detector would send the detection information to the Server Main Program, 
+                    and in response the Server Main Program would send an alert notification to the supervisor’s Smart Alert Mobile App via the push notification services, 
+                    meanwhile the Server Main Program would also save the detection record in the database. 
+                    After receiving the alert notification on the Smart Alert App, the supervisor may want to send a request back to the Server Main Program to get the updated detection records and the detected video frames, 
+                    which can let the supervisor double check whether there is a real accident or just a fake alert.
+                </p>
+            </div>
+        </div>
+
+        <br>
+        <div class="row mt centered">
+            <h5>Video Fall Detector</h5>	
+            <div class="col-sm-8 col-sm-offset-2">
+                <img class="img-responsive" src="../Images/Projects/SmartVideoSurveillanceSystem/video_fall_detector.png" alt="">              
+            </div>
+        </div>
+
+        <br>
+        <div class="row mt centered">
+            <h5>Alert Notification</h5>	
+            <div class="col-sm-6 col-sm-offset-3">
+                <img class="img-responsive" src="../Images/Projects/SmartVideoSurveillanceSystem/alert_notification.png" alt="">               
+            </div>
+        </div>
+
+        <br>
+        <div class="row mt centered">
+            <h5>Smart Alert App UI</h5>	
+            <div class="col-sm-4 col-sm-offset-4">
+                <img style="margin-left:auto; margin-right:auto" class="img-responsive" src="../Images/Projects/SmartVideoSurveillanceSystem/smart_alert_app_ui.png" alt="">               
+            </div>
+        </div>
+
+        <div class="row mt centered">
+            <h4>Demo Video</h4>
+
+            <div class="video-container">
+                <iframe allowFullScreen='allowFullScreen' 
+                    src="http://youtube.com/embed/PTcZcCPNwH4?autoplay=0"
+                    frameborder="0">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="row mt">
+            <div class="col-sm-8 col-sm-offset-2">
+                <p>The Video Fall Detector was modified from <a href="https://github.com/harishrithish7/Fall-Detection" target="_blank">
+                    https://github.com/harishrithish7/Fall-Detection</a>.<br>
+                    The Server Main Program was developed using Python. 
+                    MongoDB is used for Database.
+                    The Smart Alert App is developed using Unity.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h4>Project GitHub URL</h4>
+                <a href="https://github.com/atom0520/SmartVideoSurveillanceSystem" target="_blank">
+                    https://github.com/atom0520/SmartVideoSurveillanceSystem </a>
+            </div>
+        </div>
+	</div>	
+	
+	<!-- Footer Section -->	
+	<div id="footer"></div>	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+  </body>
+
+  <script>
+        $("#header").load("../Includes/header.html", function(){
+
+          var navItemHome = document.getElementById("nav-item-home").getElementsByTagName("a")[0];
+          navItemHome.setAttribute("href","../"+navItemHome.getAttribute("href"));
+
+          var navItemProjects = document.getElementById("nav-item-projects").getElementsByTagName("a")[0];
+          navItemProjects.setAttribute("href","../"+navItemProjects.getAttribute("href"));
+
+          var navItemCV = document.getElementById("nav-item-cv").getElementsByTagName("a")[0];
+          navItemCV.setAttribute("href","../"+navItemCV.getAttribute("href"));
+
+          var logoImg = document.getElementsByClassName("navbar-logo")[0].getElementsByTagName("img")[0];
+          logoImg.setAttribute("src","../"+logoImg.getAttribute("src"));
+        });
+        
+        $("#footer").load("../Includes/footer.html");
+    </script>
+</html>
