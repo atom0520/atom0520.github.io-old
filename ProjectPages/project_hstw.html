@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <title>Atom's Project - She and Her Hamster</title>
+    
+        <link href="../CSS/bootstrap.css" rel="stylesheet">
+        <link href="../CSS/main.css" rel="stylesheet">
+    
+        <script src="../Scripts/jquery-1.10.2.min.js"></script>
+        <script src="../Scripts/hover.zoom.js"></script>
+        <script src="../Scripts/hover.zoom.conf.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <div id="header"></div>
+
+	<!-- Projects Section -->	
+    <div class="container pt">
+        <div class="row mt">
+            <div class="col-sm-6 col-sm-offset-3 centered">
+                <h3>Homos Save the World</h3>
+                <hr>
+                <p>A hilarious FPS game made in Ludum Dare 42.</p>
+            </div>
+        </div>
+        <div class="row mt centered">
+            <div class="col-sm-6 col-sm-offset-3 centered">
+                <p><img class="img-responsive" src="../Images/Projects/HomosSaveTheWorld/hstw_screenshot_01.png" alt=""></p>
+            </div>
+
+        </div>
+        <div class="row mt centered">
+            <div class="col-sm-6 col-sm-offset-3 centered">
+                <p><img class="img-responsive" src="../Images/Projects/HomosSaveTheWorld/hstw_screenshot_02.png" alt=""></p>
+            </div>
+        </div>
+
+        <div class="row mt centered">
+            <div class="col-sm-6 col-sm-offset-3 centered">
+                <p><img class="img-responsive" src="../Images/Projects/HomosSaveTheWorld/hstw_screenshot_03.png" alt=""></p>
+            </div>
+        </div>
+        <div class="row mt centered">
+            <div class="col-sm-6 col-sm-offset-3 centered">
+                <p><img class="img-responsive" src="../Images/Projects/HomosSaveTheWorld/hstw_comics.png" alt=""></p>
+            </div>
+        </div>
+
+        <div class="row mt centered">
+            <h4>Demo Video</h4>
+
+            <div class="video-container">
+                <iframe allowFullScreen='allowFullScreen'
+                        src="https://youtube.com/embed/WUg6pxxbivQ?autoplay=0"
+                        frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row mt">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h4>Development Tools</h4>
+                <p>Unreal Engine 4.20</p>
+                <p>Blender</p>
+            </div>
+        </div>
+
+        <div class="row mt">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h4>Credits</h4>
+                <p>Models: Kenny <a href="https://www.kenney.nl/assets">(https://www.kenney.nl/assets)</a></p>
+                <p>Graphics: Kenny, PSDGraphics <a href="http://psdgraphics.com">(http://psdgraphics.com)</a></p>
+                <ul>
+                    <li>“Condom Icon” made by Smashicons from <a href="www.flaticon.com">www.flaticon.com</a></li>
+                    <li>“Family Icon” made by Freepik from <a href="www.flaticon.com">www.flaticon.com</a></li>
+                </ul>
+                <p>Music: Green Bear Music <a href="https://greenbearmusic.bandcamp.com/">(https://greenbearmusic.bandcamp.com/)</a></p>
+            </div>
+        </div>
+
+        <div class="row mt">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h4>Game Links</h4>
+                <p><a href="https://ldjam.com/events/ludum-dare/42/homos-save-the-world">https://ldjam.com/events/ludum-dare/42/homos-save-the-world</a></p>
+                <p><a href="https://atom0520.itch.io/homos-save-the-world">https://atom0520.itch.io/homos-save-the-world</a></p>
+            </div>
+        </div>
+    </div>	
+	
+	<!-- Footer Section -->	
+	<div id="footer"></div>	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+  </body>
+
+  <script>
+        $("#header").load("../Includes/header.html", function(){
+
+          var navItemHome = document.getElementById("nav-item-home").getElementsByTagName("a")[0];
+          navItemHome.setAttribute("href","../"+navItemHome.getAttribute("href"));
+
+          var navItemProjects = document.getElementById("nav-item-projects").getElementsByTagName("a")[0];
+          navItemProjects.setAttribute("href","../"+navItemProjects.getAttribute("href"));
+
+          var navItemCV = document.getElementById("nav-item-cv").getElementsByTagName("a")[0];
+          navItemCV.setAttribute("href","../"+navItemCV.getAttribute("href"));
+
+          var logoImg = document.getElementsByClassName("navbar-logo")[0].getElementsByTagName("img")[0];
+          logoImg.setAttribute("src","../"+logoImg.getAttribute("src"));
+        });
+        
+        $("#footer").load("../Includes/footer.html");
+    </script> 
+</html>
