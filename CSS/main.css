@@ -134,9 +134,33 @@ a:after {
 
 .navbar-inverse .navbar-brand {
     font-weight: 700;
-    font-size: 20px;
     letter-spacing: 2px;
-    color:rgb(64,64,64);
+    color: rgb(64,64,64);
+   
+}
+
+@media (min-width: 481px) {
+    .navbar-inverse .navbar-brand {
+        font-size: 20px;
+        padding: 6px 15px;
+    }
+    .navbar-img {
+        height: 48px;
+        margin-left: 4px;
+        margin-top: -6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-inverse .navbar-brand {
+        font-size: 12px;
+        padding: 15px 15px;
+    }
+    .navbar-img {
+        height: 28px;
+        margin-left: 4px;
+        margin-top: -4px;
+    }
 }
 
 .navbar-inverse .navbar-brand:hover {
@@ -342,3 +366,4 @@ bt {
     width: 100%;
     height: 100%;
 }
+
