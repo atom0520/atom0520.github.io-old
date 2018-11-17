@@ -1,78 +1,78 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
 
 
-    <link href="CSS/bootstrap.css" rel="stylesheet">
-    <link href="CSS/main.css" rel="stylesheet">
+        <link href="CSS/bootstrap.css" rel="stylesheet">
+        <link href="CSS/main.css" rel="stylesheet">
 
-    <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/hover.zoom.js"></script>
-    <script src="Scripts/hover.zoom.conf.js"></script>
+        <script src="Scripts/jquery-1.10.2.min.js"></script>
+        <script src="Scripts/hover.zoom.js"></script>
+        <script src="Scripts/hover.zoom.conf.js"></script>
 
-    <title>Atom's Home</title>
-  </head>
+        <title>Atom's Home</title>
+    </head>
 
-  <body>
-    <!-- Navbar Section -->	
-    <div id="header"></div>
+    <body>
+        <!-- Navbar Section -->
+        <div id="header"></div>
 
-    <!-- Welcome Section -->	
-    <div id="ww">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 centered">
-                    <img src="Images/my_photo.png" alt="My Photo" width="224">
+        <!-- Welcome Section -->
+        <div id="ww">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 centered">
+                        <img src="Images/my_photo.png" alt="My Photo" width="224">
 
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 centered">
+                        <h3>Hi, I'm Atom! <img src="Images/hi.gif" alt="hi" height="48" style="margin-top:-24px"></h3>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <p>
+                            Hello visitor! My name is Atom Cai. Welcome to my website!
+                            I am a former enthusiastic gamer and currently an enthusiastic game programmer (or programmer). You can find a lot of my games and non-game projects on this website, and they are all free (at the moment, maybe not after I get famous)!
+                        </p>
+                        <br>
+                        <p>
+                            I have a lot of experience developing games and virtual reality software for multiple platforms and I'm a full stack developer who can handle both front-end application development and back-end server and database deployment.
+                            If you have any interest in a chat with me or introducing me to your developer party, you are welcome to bother me via the contact info at the bottom of this page
+                            <img src="Images/down.png" alt="hi" height="28" style="margin-top:0px">
+                        </p>
+                    </div>
                 </div>
             </div>
-            <br>
+        </div>
 
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 centered">
-                    <h3>Hi, I'm Atom! <img src="Images/hi.gif" alt="hi" height="48" style="margin-top:-24px"></h3>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">
-                    <p>
-                        Hello visitor! My name is Atom Cai. Welcome to my website!
-                        I am a former enthusiastic gamer and currently an enthusiastic game programmer (or programmer). You can find a lot of my games and non-game projects on this website, and they are all free (at the moment, maybe not after I get famous)!
-                    </p>
-                    <br>
-                    <p>
-                        I have a lot of experience developing games and virtual reality software for multiple platforms and I'm a full stack developer who can handle both front-end application development and back-end server and database deployment. 
-                        If you have any interest in a chat with me or introducing me to your developer party, you are welcome to bother me via the contact info at the bottom of this page
-                        <img src="Images/down.png" alt="hi" height="28" style="margin-top:0px">
-                    </p>
-                </div>
-            </div>
-        </div> 
-    </div>	
-	
-    <!-- Footer Section -->	
-    <div id="footer"></div>
+        <!-- Footer Section -->
+        <div id="footer"></div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="Scripts/bootstrap.min.js"></script>
-  </body>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="Scripts/bootstrap.min.js"></script>
+    </body>
+</html>
 
-  <script>
+<script>
 
-      $("#header").load("Includes/header.html", function(){
+    $("#header").load("Includes/header.html", function () {
         var activatedNavItem = document.getElementById("nav-item-home");
         activatedNavItem.className += " active";
-      });
-      
-      $("#footer").load("Includes/footer.html");
-  </script> 
-</html>
+    });
+
+    $("#footer").load("Includes/footer.html");
+</script>

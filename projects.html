@@ -1,197 +1,196 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <link href="CSS/bootstrap.css" rel="stylesheet">
-    <link href="CSS/main.css" rel="stylesheet">
+        <link href="CSS/bootstrap.css" rel="stylesheet">
+        <link href="CSS/main.css" rel="stylesheet">
 
-    <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/hover.zoom.js"></script>
-    <script src="Scripts/hover.zoom.conf.js"></script>
+        <script src="Scripts/jquery-1.10.2.min.js"></script>
+        <script src="Scripts/hover.zoom.js"></script>
+        <script src="Scripts/hover.zoom.conf.js"></script>
 
-    <title>Atom's Projects</title>
-  </head>
+        <title>Atom's Projects</title>
+    </head>
 
-  <body>
-    <!-- Navbar Section -->	
-    <div id="header"></div>
-	
-	<!-- Projects Section -->	
-	<div class="container pt">		
-        <div class="row mt">
-			<div class="col-sm-6 col-sm-offset-3 centered">
-				<h3>My Projects</h3>
-			</div>
-		</div>
+    <body>
+        <!-- Navbar Section -->
+        <div id="header"></div>
 
-        <!--project list-->
-        <div class="row">
-            <div id="project-list" class="col-sm-6 col-sm-offset-3"></div>
-        </div>  
-    </div>	
-	
-	<!-- Footer Section -->
-    <div id="footer"></div>
+        <!-- Projects Section -->
+        <div class="container pt">
+            <div class="row mt">
+                <div class="col-sm-6 col-sm-offset-3 centered">
+                    <h3>My Projects</h3>
+                </div>
+            </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="Scripts/bootstrap.min.js"></script>
-  </body>
+            <!--project list-->
+            <div class="row">
+                <div id="project-list" class="col-sm-6 col-sm-offset-3"></div>
+            </div>
+        </div>
 
-  <script>
-        $("#header").load("Includes/header.html", function(){
-            var activatedNavItem = document.getElementById("nav-item-projects");
-            activatedNavItem.className += " active";
-        });
+        <!-- Footer Section -->
+        <div id="footer"></div>
 
-        $("#footer").load("Includes/footer.html");
-        
-        var projectsData =[
-            {
-                title:"The Story of Exam Escort",
-                iconSrc:"Images/Projects/TheStoryOfExamEscort/tsoee_icon.png",
-                date:"11/2013 - 11/2014",
-                imgSrc:"Images/Projects/TheStoryOfExamEscort/tsoee_screenshot_1.png",
-                imgStyle:"padding-left:8px; padding-right:8px",
-                description:"An RPG game based on my experience of taking the Gaokao and the history of the Ming Dynasty.<br>(Made with RPG Maker XP)",
-                projectPage:"project_tsoee.html"
-            },
-            {
-                title:"Binbin's Present",
-                iconSrc:"Images/Projects/BinbinsPresent/binbinspresent_icon.png",
-                date:"02/2014",
-                imgSrc:"Images/Projects/BinbinsPresent/binbinspresent_screenshot_1.png",
-                imgStyle:"padding-left:8px; padding-right:8px",
-                description:"A warm room escape game made in a cold winter.<br>(Made with RPG Maker XP)",
-                projectPage:"project_binbinspresent.html"
-            },
-            {
-                title:"She and Her Hamster",
-                iconSrc:"Images/Projects/SheAndHerHamster/sheandherhamster_icon.png",
-                date:"01/2016 – 09/2016",
-                imgSrc:"Images/Projects/SheAndHerHamster/sheandherhamster_screenshot_1.png",
-                imgStyle:"width:50%",
-                description:"A quiz racing game for helping my sister memorize IELTS vocabulary.<br>(Developed with Cocos2d using C++)",
-                projectPage:"project_sahh.html"
-            },
-            {
-                title:"Road",
-                iconSrc:"Images/Projects/Road/road_icon.png",
-                date:"06/2016",
-                imgSrc:"Images/Projects/Road/road_screenshot_1.png",
-                imgStyle:"padding-left:8px; padding-right:8px",
-                description:"A music rhythm game with some narrative elements, which was made in IndieACE GameJam 2016.<br>(Developed with Cocos2d using C++ and JavaScript)",
-                projectPage:"project_road.html"
-            },
-            {
-                title:"Eliminate & Fight",
-                iconSrc:"Images/Projects/EliminateFight/eliminatefight_icon.png",
-                date:"07/2016",
-                imgSrc:"Images/Projects/EliminateFight/eliminatefight_screenshot_1.png",
-                imgStyle:"width:50%",
-                description:"An HTML5 game combining the game mechanics of match-three games and fighting games.<br>(Developed with Cocos2d using JavaScript)",
-                projectPage:"project_eliminatefight.html"
-            },            
-            {
-                title:"Little Copter",
-                iconSrc:"Images/Projects/LittleCopter/littlecopter_icon.png",
-                date:"08/2016",
-                imgSrc:"Images/Projects/LittleCopter/littlecopter_screenshot_1.png",
-                imgStyle:"padding-left:8px; padding-right:8px",
-                description:"A cute 2D platform game about the evolution of aviation technology made in Ludum Dare 36.<br>(Developed with Cocos2d using JavaScript)",
-                projectPage:"project_littlecopter.html"
-            },
-            {
-                title:"Roll Your Pokeball",
-                iconSrc:"Images/Projects/RollYourPokeball/rollyourpokeball_icon.png",
-                date:"09/2017",
-                imgSrc:"Images/Projects/RollYourPokeball/rollyourpokeball_screenshot_5.png",
-                imgStyle:"padding-left:8px; padding-right:8px",
-                description:"A 3D rolling ball game about catching naughty pokemons.<br>(Developed with Unity using C#)",
-                projectPage:"project_rollyourpokeball.html"
-            },
-            {
-                title:"Sounds Of Nature",
-                iconSrc:"Images/Projects/SoundsOfNature/soundsofnature_icon.png",
-                date:"11/2017",
-                imgSrc:"Images/Projects/SoundsOfNature/soundsofnature_screenshot_2.png",
-                imgStyle:"padding-left:8px; padding-right:8px",
-                description:"A soundscape game in which player can search animals in a forest by listening to the sounds.<br>(Developed with Unity using C#)",
-                projectPage:"project_soundsofnature.html"
-            },
-            {
-                title:"Beauties and Beast",
-                iconSrc:"Images/Projects/BeautiesAndBeast/beautiesandbeast_icon.png",
-                date:"11/2017 – 12/2017",
-                imgSrc:"Images/Projects/BeautiesAndBeast/representative_image.png",
-                imgStyle:"padding-left:8px; padding-right:8px",
-                description:"A VR FPS game about fighting an evil dragon with three beauties.<br>(Developed with Unity and Oculus VR)",
-                projectPage:"project_beautiesandbeast.html"
-            },
-            {
-                title:"Smart Video Surveillance System",
-                titleSize:"h5",
-                iconSrc:"Images/Projects/SmartVideoSurveillanceSystem/svss_icon.png",
-                date:"04/2018",
-                imgSrc:"Images/Projects/SmartVideoSurveillanceSystem/svss_representative_image.png",
-                imgStyle:"padding-left:8px; padding-right:8px",
-                description:"A smart video surveillance system that can detect human fall events and send out alert notifications.<br>(Developed using MATLAB, Python, and Unity)",
-                projectPage:"project_svss.html"
-            },
-            {
-                title: "Knowledge Is Power",
-                titleSize: "h5",
-                iconSrc: "Images/Projects/KnowledgeIsPower/kip_icon.png",
-                date: "12/2017 - Present",
-                imgSrc: "Images/Projects/KnowledgeIsPower/kip_screenshot_1.png",
-                imgStyle: "width:50%",
-                description: "A mobile multiplayer game combining the gameplays of quiz game and fighting game.<br>(Developed using Unity, MySQL, PHP)",
-                projectPage: "project_kip.html"
-            },
-            {
-                title: "Homos Save The World",
-                titleSize: "h5",
-                iconSrc: "Images/Projects/HomosSaveTheWorld/hstw_icon.png",
-                date: "09/2018",
-                imgSrc: "Images/Projects/HomosSaveTheWorld/hstw_comics.png",
-                imgStyle: "padding-left:8px; padding-right:8px",
-                description: "A hilarious FPS game made in Ludum Dare 42.<br>(Developed using Unreal and Blender)",
-                projectPage: "project_hstw.html"
-            }
-        ];
-        
-        var projectList = document.getElementById("project-list");
-        for(var i=0; i<projectsData.length; i++){
-            var projectData = projectsData[i];
-            var thumbnail = document.createElement("div");
-            thumbnail.className = "thumbnail thumbnail-project";
-            if(projectData.titleSize!=null){
-                titleSize=projectData.titleSize;
-            }else{
-                titleSize="h4";
-            }
-            // console.log(projectData);
-            // console.log(projectData.iconSrc);
-            thumbnail.innerHTML =  
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="Scripts/bootstrap.min.js"></script>
+    </body>
+</html>
+<script>
+    $("#header").load("Includes/header.html", function () {
+        var activatedNavItem = document.getElementById("nav-item-projects");
+        activatedNavItem.className += " active";
+    });
+
+    $("#footer").load("Includes/footer.html");
+
+    var projectsData = [
+        {
+            title: "The Story of Exam Escort",
+            iconSrc: "Images/Projects/TheStoryOfExamEscort/tsoee_icon.png",
+            date: "11/2013 - 11/2014",
+            imgSrc: "Images/Projects/TheStoryOfExamEscort/tsoee_screenshot_1.png",
+            imgStyle: "padding-left:8px; padding-right:8px",
+            description: "An RPG game based on my experience of taking the Gaokao and the history of the Ming Dynasty.<br>(Made with RPG Maker XP)",
+            projectPage: "project_tsoee.html"
+        },
+        {
+            title: "Binbin's Present",
+            iconSrc: "Images/Projects/BinbinsPresent/binbinspresent_icon.png",
+            date: "02/2014",
+            imgSrc: "Images/Projects/BinbinsPresent/binbinspresent_screenshot_1.png",
+            imgStyle: "padding-left:8px; padding-right:8px",
+            description: "A warm room escape game made in a cold winter.<br>(Made with RPG Maker XP)",
+            projectPage: "project_binbinspresent.html"
+        },
+        {
+            title: "She and Her Hamster",
+            iconSrc: "Images/Projects/SheAndHerHamster/sheandherhamster_icon.png",
+            date: "01/2016 – 09/2016",
+            imgSrc: "Images/Projects/SheAndHerHamster/sheandherhamster_screenshot_1.png",
+            imgStyle: "width:50%",
+            description: "A quiz racing game for helping my sister memorize IELTS vocabulary.<br>(Developed with Cocos2d using C++)",
+            projectPage: "project_sahh.html"
+        },
+        {
+            title: "Road",
+            iconSrc: "Images/Projects/Road/road_icon.png",
+            date: "06/2016",
+            imgSrc: "Images/Projects/Road/road_screenshot_1.png",
+            imgStyle: "padding-left:8px; padding-right:8px",
+            description: "A music rhythm game with some narrative elements, which was made in IndieACE GameJam 2016.<br>(Developed with Cocos2d using C++ and JavaScript)",
+            projectPage: "project_road.html"
+        },
+        {
+            title: "Eliminate & Fight",
+            iconSrc: "Images/Projects/EliminateFight/eliminatefight_icon.png",
+            date: "07/2016",
+            imgSrc: "Images/Projects/EliminateFight/eliminatefight_screenshot_1.png",
+            imgStyle: "width:50%",
+            description: "An HTML5 game combining the game mechanics of match-three games and fighting games.<br>(Developed with Cocos2d using JavaScript)",
+            projectPage: "project_eliminatefight.html"
+        },
+        {
+            title: "Little Copter",
+            iconSrc: "Images/Projects/LittleCopter/littlecopter_icon.png",
+            date: "08/2016",
+            imgSrc: "Images/Projects/LittleCopter/littlecopter_screenshot_1.png",
+            imgStyle: "padding-left:8px; padding-right:8px",
+            description: "A cute 2D platform game about the evolution of aviation technology made in Ludum Dare 36.<br>(Developed with Cocos2d using JavaScript)",
+            projectPage: "project_littlecopter.html"
+        },
+        {
+            title: "Roll Your Pokeball",
+            iconSrc: "Images/Projects/RollYourPokeball/rollyourpokeball_icon.png",
+            date: "09/2017",
+            imgSrc: "Images/Projects/RollYourPokeball/rollyourpokeball_screenshot_5.png",
+            imgStyle: "padding-left:8px; padding-right:8px",
+            description: "A 3D rolling ball game about catching naughty pokemons.<br>(Developed with Unity using C#)",
+            projectPage: "project_rollyourpokeball.html"
+        },
+        {
+            title: "Sounds Of Nature",
+            iconSrc: "Images/Projects/SoundsOfNature/soundsofnature_icon.png",
+            date: "11/2017",
+            imgSrc: "Images/Projects/SoundsOfNature/soundsofnature_screenshot_2.png",
+            imgStyle: "padding-left:8px; padding-right:8px",
+            description: "A soundscape game in which player can search animals in a forest by listening to the sounds.<br>(Developed with Unity using C#)",
+            projectPage: "project_soundsofnature.html"
+        },
+        {
+            title: "Beauties and Beast",
+            iconSrc: "Images/Projects/BeautiesAndBeast/beautiesandbeast_icon.png",
+            date: "11/2017 – 12/2017",
+            imgSrc: "Images/Projects/BeautiesAndBeast/representative_image.png",
+            imgStyle: "padding-left:8px; padding-right:8px",
+            description: "A VR FPS game about fighting an evil dragon with three beauties.<br>(Developed with Unity and Oculus VR)",
+            projectPage: "project_beautiesandbeast.html"
+        },
+        {
+            title: "Smart Video Surveillance System",
+            titleSize: "h5",
+            iconSrc: "Images/Projects/SmartVideoSurveillanceSystem/svss_icon.png",
+            date: "04/2018",
+            imgSrc: "Images/Projects/SmartVideoSurveillanceSystem/svss_representative_image.png",
+            imgStyle: "padding-left:8px; padding-right:8px",
+            description: "A smart video surveillance system that can detect human fall events and send out alert notifications.<br>(Developed using MATLAB, Python, and Unity)",
+            projectPage: "project_svss.html"
+        },
+        {
+            title: "Knowledge Is Power",
+            titleSize: "h5",
+            iconSrc: "Images/Projects/KnowledgeIsPower/kip_icon.png",
+            date: "12/2017 - Present",
+            imgSrc: "Images/Projects/KnowledgeIsPower/kip_screenshot_1.png",
+            imgStyle: "width:50%",
+            description: "A mobile multiplayer game combining the gameplays of quiz game and fighting game.<br>(Developed using Unity, MySQL, PHP)",
+            projectPage: "project_kip.html"
+        },
+        {
+            title: "Homos Save The World",
+            titleSize: "h5",
+            iconSrc: "Images/Projects/HomosSaveTheWorld/hstw_icon.png",
+            date: "09/2018",
+            imgSrc: "Images/Projects/HomosSaveTheWorld/hstw_comics.png",
+            imgStyle: "padding-left:8px; padding-right:8px",
+            description: "A hilarious FPS game made in Ludum Dare 42.<br>(Developed using Unreal and Blender)",
+            projectPage: "project_hstw.html"
+        }
+    ];
+
+    var projectList = document.getElementById("project-list");
+    for (var i = 0; i < projectsData.length; i++) {
+        var projectData = projectsData[i];
+        var thumbnail = document.createElement("div");
+        thumbnail.className = "thumbnail thumbnail-project";
+        if (projectData.titleSize != null) {
+            titleSize = projectData.titleSize;
+        } else {
+            titleSize = "h4";
+        }
+        // console.log(projectData);
+        // console.log(projectData.iconSrc);
+        thumbnail.innerHTML =
             "<div class=\"row\"> \
                 <div class=\"col-sm-8 text-left\"> \
-                    <"+titleSize+" class=\"thumbnail-project-title\" ><img src=\""+projectData.iconSrc+"\" alt=\"\">&nbsp&nbsp"+projectData.title+"</"+titleSize+">\
+                    <"+ titleSize + " class=\"thumbnail-project-title\" ><img src=\"" + projectData.iconSrc + "\" alt=\"\">&nbsp&nbsp" + projectData.title + "</" + titleSize + ">\
                 </div>\
                 <div class=\"col-sm-4 text-right\">\
-                    <h4 class=\"thumbnail-project-date\"><small>"+projectData.date+"</small></h4>\
+                    <h4 class=\"thumbnail-project-date\"><small>"+ projectData.date + "</small></h4>\
                 </div>\
             </div>\
-            <img style=\""+projectData.imgStyle+"\" src=\""+projectData.imgSrc+"\" alt=\"\">\
-            <p class=\"thumbnail-project-description\">"+projectData.description+"</p>\
-            <p class=\"thumbnail-project-description\"><a href=\"ProjectPages/"+projectData.projectPage+"\">Click to see details</a></p>";      
-            projectList.appendChild(thumbnail);    
-        }
+            <img style=\""+ projectData.imgStyle + "\" src=\"" + projectData.imgSrc + "\" alt=\"\">\
+            <p class=\"thumbnail-project-description\">"+ projectData.description + "</p>\
+            <p class=\"thumbnail-project-description\"><a href=\"ProjectPages/"+ projectData.projectPage + "\">Click to see details</a></p>";
+        projectList.appendChild(thumbnail);
+    }
 
-  </script> 
-</html>
+</script> 
