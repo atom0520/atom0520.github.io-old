@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+  	background-color: white;
+  	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(64,64,64);
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(32,32,32);
+}
+
+h1 {
+	font-size: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: rgb(0,0,224);
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: rgb(255,99,71);
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*.copyrights{
+	text-indent:-9999px;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+}*/
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-inverse {
+    padding-bottom: 64px;
+    padding-top: 64px;
+    background-color: rgb(135,206,235);
+    /* border-color: #333; */
+    border-width: 0;
+}
+
+/*.navbar-inverse {
+	background-color: #555;
+	border-color: #333;
+}*/
+
+.navbar-inverse .navbar-nav > li > a {
+    /*margin-top: 30px;*/
+    color: rgb(64,64,64);
+    font-weight: 700;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav .active{
+    background: rgb(255,99,71);
+    border-radius: 12px;
+}
+
+.navbar-inverse .navbar-nav .active > a {
+    color: white;
+    background: transparent;
+}
+.navbar-inverse .navbar-nav .active > a:hover,
+.navbar-inverse .navbar-nav .active > a:focus {
+    color: white;
+    background: transparent;
+}
+/*.navbar-brand {
+
+    margin-bottom: 0px;
+   
+}*/
+
+/*.navbar-brand > img {
+   
+    margin-top: -13px;
+}*/
+
+.navbar-inverse .navbar-brand {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgb(64,64,64);
+   
+}
+
+@media (min-width: 481px) {
+    .navbar-inverse .navbar-brand {
+        font-size: 20px;
+        padding: 6px 15px;
+    }
+    .navbar-img {
+        height: 48px;
+        margin-left: 4px;
+        margin-top: -6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-inverse .navbar-brand {
+        font-size: 12px;
+        padding: 15px 15px;
+    }
+    .navbar-img {
+        height: 28px;
+        margin-left: 4px;
+        margin-top: -4px;
+    }
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color:rgb(64,64,64);
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+}
+
+.progress-bar-theme {
+    background-color: rgb(0,191,255);
+}
+
+
+/* Helpers */
+
+.mt {
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+.pt {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+
+/* +++++ WRAP SECTIONS +++++ */
+
+#ww {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: white;
+}
+
+#footer {
+	background-color: rgb(154,205,50);
+	padding-top: 50px;
+	padding-bottom: 50px; 
+}
+
+#footer p {
+    color: rgb(32,32,32);
+    font-weight: 500;
+}
+
+#footer h4 {
+	color: rgb(64,64,64);
+	/* text-transform: uppercase; */
+	padding-bottom: 20px;
+}
+
+#footer a {
+    color: rgb(0,0,224);
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+#footer a:hover,
+#footer a:focus {
+    color: white;
+    text-decoration: none;
+    outline: 0;
+}
+
+/* +++++ Color Wraps / Blog Page +++++ */
+
+#grey {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f2f2f2;
+}
+
+#white {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #ffffff;
+}
+
+
+
+/* Blog Date*/
+bd {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #d2d2d2;
+	font-weight: 700;
+}
+
+/* Blog Author*/
+ba {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/* Blog Quote */
+.bq {
+	font-size: 22px;
+	padding-top: 30px;
+}
+
+/* Blog Tags */
+bt {
+	font-size: 12px;
+}
+
+/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
+/* Effects also are controled by hover.zoom.js */
+.zoom { 
+    display:block; 
+    position:relative; 
+    overflow:hidden; 
+    background:transparent url(../img/loader.gif) no-repeat center;
+}
+
+
+.zoomOverlay {
+    position:absolute;
+    top:0; left:0;
+    bottom:0; right:0;
+    display:none;
+    background-image:url(../img/zoom.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.zoom2 {
+	opacity: 1;
+}
+
+.zoom2:hover {
+	opacity: 0.5;
+}
+
+/* glyphicon Configuration */
+
+.glyphicon {
+	font-size: 40px;
+	color: #555;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+/* .bg-grey {
+    background-color: rgb(224,224,224);
+} */
+
+.thumbnail-project {
+    padding: 0px 0px 0px 0px;
+    background-color: rgb(240,240,240);
+    border: 1px solid rgb(192,192,192);
+}
+
+/*.thumbnail-project > img{
+
+}*/
+
+.thumbnail-project-title {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    margin-left: 12px;
+}
+
+.thumbnail-project-title >img {
+    width:32px;
+    height:32px;
+    margin-top: -8px;
+}
+
+.thumbnail-project-date {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    margin-right: 12px;
+}
+
+.thumbnail-project-description {
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.video-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+    height: 360px; 
+    background-color:rgb(207, 92, 92);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
