@@ -82,22 +82,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../Scripts/bootstrap.min.js"></script>
   </body>
-  <script>
-        $("#header").load("../Includes/header.html", function(){
-
-          var navItemHome = document.getElementById("nav-item-home").getElementsByTagName("a")[0];
-          navItemHome.setAttribute("href","../"+navItemHome.getAttribute("href"));
-
-          var navItemProjects = document.getElementById("nav-item-projects").getElementsByTagName("a")[0];
-          navItemProjects.setAttribute("href","../"+navItemProjects.getAttribute("href"));
-
-          var navItemCV = document.getElementById("nav-item-cv").getElementsByTagName("a")[0];
-          navItemCV.setAttribute("href","../"+navItemCV.getAttribute("href"));
-
-          var logoImg = document.getElementsByClassName("navbar-logo")[0].getElementsByTagName("img")[0];
-          logoImg.setAttribute("src","../"+logoImg.getAttribute("src"));
-        });
-        
-        $("#footer").load("../Includes/footer.html");
-    </script>
 </html>
+
+<script src="../Scripts/load.project.page.header.and.footer.js"></script>
